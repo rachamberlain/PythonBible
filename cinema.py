@@ -11,3 +11,5 @@ while True:
         pass
     else:
         print("We don't have that film...")
+
+        print()
