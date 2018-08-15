@@ -7,9 +7,22 @@ films = {
 
 while True:
     choice = input("What film would you like to watch?: ").strip().title()
+
     if choice in films:
-        pass
+        age = int(input("How old are you? :").strip())
+
+        if age >= films[choice][0]:
+
+            if films[choice][1] > 0:
+                print("Enjoy the film")
+                films[choice][1] = films[choice][1] - 1
+            else:
+                print("Sorry we are sold out")
+        else:
+            print("You are not old enough, choose another film...")
     else:
         print("We don't have that film...")
 
-        print()
+
+        print("Hi")
+
